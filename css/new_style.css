@@ -1,0 +1,307 @@
+/*FUENTES*/
+
+@font-face{
+	font-family: "Poppins", sans-serif;
+	src: url('https://fonts.googleapis.com/css?family=Poppins');
+}
+
+/********************************************************/
+/*														*/
+/*					    GENERALES						*/
+/*														*/
+/********************************************************/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif, Arial; 
+    text-decoration: none;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+body{
+    background: #f4f4f4;
+}
+
+/********************* ALERTAS *********************/
+
+.alerta {
+    width: 50%;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    background: green;
+    box-shadow: 0px 1px 3px #ccc;
+    margin-bottom: 5px;
+    border-radius: 2px;
+}
+
+.alerta-error{
+    background: red;
+}
+
+.alerta-exito{
+    padding: 5px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+/******************* ESTILOS DE BOTONES *******************/
+.boton{
+	display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    color: white;
+    background: #3682c2;
+    border: 1px solid white;
+	text-align: center;
+}
+
+.boton-peque{
+	width: 250px;
+	margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.boton-red{
+    background: #ff0000;
+}
+.boton-green{
+    background: #0e7a00;
+}
+.boton-orange{
+    background: orange;
+}
+
+.boton:hover{
+    display: block;
+    color: white;
+    background: #000000;
+    border: 1px solid white;
+	cursor: pointer;
+	box-shadow: 0px 1px 3px #ccc;
+}
+
+/******************* ESTILOS PARA LISTAS *******************/
+
+
+
+/******************* ESTILOS PARA TABLAS *******************/
+
+table{
+    background-color: #bbb;
+    text-align: center;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th, td{
+    padding: 10px;
+}
+
+thead{
+    color: white;
+    background-color: #3682c2;
+    border-bottom: solid 5px white;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+tr:hover td{
+    background-color: #3498db;
+    color: white;
+}
+
+/******************* ESTILOS PARA FORMULARIOS *******************/
+
+#formulario{
+    column-count: 1;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.formulario{
+	width: 50%;
+	margin: auto;
+}
+
+label,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+	text-align: left;
+    display: block;
+    width: 95%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+select[name="tipo"],
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    column-count: 2;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="button"],
+input[type="submit"]{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    color: white;
+    background: #3682c2;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+/********************************************************/
+/*														*/
+/*					    CABECERA						*/
+/*														*/
+/********************************************************/
+
+#cabecera{
+	width: 85%;
+	height: auto;
+	background: transparent;
+	margin: 0px auto;
+	/*border: 1px solid black;*/
+}
+/********************* NOMBRE-LOGO *********************/
+
+#logoname{
+	float: left;
+	width: 100%;	
+	height: auto;	
+	border-bottom: 2px solid #004d8a;
+}
+
+#logoname img{
+	float: left;
+	margin-right: 20px;
+	margin-top: 5px;
+}
+
+#logoname a{
+	font-size: 40px;
+	font-weight: 600;
+	color: #004d8a;
+}
+
+#logoname a:hover{
+	cursor: pointer;
+	color: #e5b20b;
+}
+
+/********************* DESCRIPCION *********************/
+
+#descripcion{
+	clear: both;
+	width: 100%;
+	height: 40px;
+}
+
+/********************************************************/
+/*														*/
+/*					    CONTENIDO						*/
+/*														*/
+/********************************************************/
+
+/********************* CONTENEDOR *********************/
+#contenedor{
+	width: 100%;
+	min-height: 900px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/********************* BARRA LATERAL *********************/
+#sidebar{
+	width: 85%;
+	height: auto;
+	background: transparent;
+	margin: 0px auto;
+	margin-bottom: 15px;
+	/*border: 1px solid black;*/
+}
+
+#menu_log ul{
+	list-style: none;
+}
+
+#menu_log ul li{
+	width: 20%;
+	float: left;
+}
+
+/********************* BLOQUE DE LOGIN *********************/
+
+#login{
+	width: 50%;
+	height: auto;
+	background: transparent;
+	margin: 0px auto;
+	margin-bottom: 15px;
+	border: 1px solid #bbbbbb;
+	text-align: center;
+	padding: 50px;
+	
+}
+
+#login img{
+	margin-top: 5px;
+	margin: 0px auto;
+	
+}
+
+#login h2{
+	text-align: center;
+}
+
+#login p{
+	text-align: center;
+}
+
+/********************* ZONA-PRINCIPAL ********************/
+#principal{
+	width: 90%;	
+	min-height: 900px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #ccc;
+	overflow: hidden;
+	padding: 15px;
+	margin: 0px auto;
+}
+
+/********************* CURRENT PROYECTS ********************/
+
+#current_projects{
+	width: 90%;
+	height: auto;
+	background: transparent;
+	margin: 0px auto;
+	margin-bottom: 15px;
+	/*border: 1px solid black;*/
+}
+
+#current_projects ul{
+	list-style: none;
+}
+
+#menu_log ul li{
+	width: 25%;
+	float: left;
+}
