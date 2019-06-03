@@ -1,4 +1,4 @@
-<h1>Registrarse</h1>
+<h1>Registre un Usuario Aquí</h1>
 
 <?php if(isset($_SESSION['register']) && $_SESSION['register'] == 'complete'): ?>
     <strong class="alerta alerta-exito">Registro Completado Correctamente</strong>
