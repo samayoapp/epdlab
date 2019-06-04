@@ -24,4 +24,21 @@ class Utilities{
         $clientes = $cliente->getAll();
         return $clientes;
     }
+
+    public static function showProyectos(){
+        require_once 'models/proyecto.php';
+        $proyecto = new Proyecto();
+        $proyectos = $proyecto->getAll();
+        return $proyectos;
+    }
+
+    public static function showProyectosByAdminId(){
+        $admin_id = $_SESSION['identity']->id;
+        require_once 'models/proyecto.php';
+       
+        $proyecto = new Proyecto();
+        $proyecto->setAdmin_id($admin_id);
+        $proyectos = $proyecto->getSomeByAdminId();
+        return $proyectos;
+    }
 }

@@ -113,7 +113,41 @@ class Equipo{
 
         return $equipos;
     }
+/* private $id;
+    private $proyecto_id;
+    private $nombre;
+    private $marca;
+    private $modelo;
+    private $serie;
+    private $fabricante;
+    private $descripcion;
+    private $fecha_crea;
+    private $imagen;
+    
+    */
 
+
+    public function save(){
+        $sql = "INSERT INTO equipos VALUES (null,'{$this->getProyecto_id()}', '{$this->getNombre()}', '{$this->getMarca()}', '{$this->getModelo()}', '{$this->getSerie()}', '{$this->getFabricante()}', '{$this->getDescripcion()}', CURDATE(), '{$this->getImagen()}');";
+        $save = $this->db->query($sql);
+
+        $result = false;
+        if($save){
+            $result = true;
+        }
+        return $result;
+    }
+
+    public function delete(){
+    $sql = "DELETE FROM equipos WHERE id={$this->id}";
+    $delete = $this->db->query($sql);
+
+    $result = false;
+        if($delete){
+            $result = true;
+        }
+        return $result;
+    }
 }//FIN DE CLASE
     
 

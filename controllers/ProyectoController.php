@@ -13,7 +13,7 @@ class proyectoController{
 
         $proyecto = new Proyecto();
         $proyecto->setAdmin_id($admin_id);
-        $proyectos = $proyecto->getAll();
+        $proyectos = $proyecto->getSomeByAdminId();
 
         require_once 'views/proyectos/gestionar.php';
     }

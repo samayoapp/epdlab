@@ -80,6 +80,12 @@ class Proyecto{
     // OTROS MÉTODOS - ACCIONES
 
     public function getAll(){
+        $sql = "SELECT * FROM proyectos ORDER BY id DESC;";
+        $proyectos = $this->db->query($sql);
+        return $proyectos;
+    }
+
+    public function getSomeByAdminId(){
         $sql = "SELECT * FROM proyectos WHERE admin_id = '{$this->getAdmin_id()}' ORDER BY id DESC;";
         $proyectos = $this->db->query($sql);
         return $proyectos;

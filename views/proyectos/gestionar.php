@@ -11,7 +11,9 @@
     </tr>
     <?php while($pro = $proyectos->fetch_object()) : ?>
         <tr>
-            <td><?=$pro->nombre;?></td>
+            <td>
+                <a href="<?=base_url?>proyecto/ver&=<?=$pro->id?>"><?=$pro->nombre;?></a>
+            </td>
             <td><?=$pro->ciudad;?></td>
             <td><?=$pro->descripcion;?></td>
             <td><?=$pro->fecha_crea;?></td>
@@ -19,6 +21,8 @@
     <?php endwhile; ?>
 
 </table>
+
+<a href="<?=base_url?>equipo/editar?=<?=$equi->id?>" class="boton boton-blue">Editar</a>
 
 
 <!--
