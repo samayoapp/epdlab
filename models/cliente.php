@@ -235,9 +235,9 @@ class Cliente{
         return $clientes;
     }
 
-    /*
+    
     public function save(){
-        $sql = "INSERT INTO clientes VALUES (null,'{$this->getAdmin_id()}', '{$this->getCliente_id()}', '{$this->getNombre()}', '{$this->getCiudad()}', '{$this->getDescripcion()}', CURDATE());";
+        $sql = "INSERT INTO clientes VALUES (null,'{$this->getAdmin_id()}', '{$this->getNombre()}', '{$this->getApellidos()}', '{$this->getEmail()}', '{$this->getPassword()}', '{$this->getEmpresa()}', '{$this->getCiudad()}', '{$this->getVendedor()}', CURDATE());";
 
         $save = $this->db->query($sql);
 
@@ -247,9 +247,5 @@ class Cliente{
         }
         return $result;
     }
-
-    */
-
-
 }
     

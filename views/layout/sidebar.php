@@ -15,13 +15,16 @@
                 <a href="<?=base_url?>proyecto/gestionar" class="boton">Proyectos</a>
             </li>
             <li>
-                <a href="<?=base_url?>usuario/registro" class="boton boton-red">Agregar Usuarios</a>
+                <a href="<?=base_url?>usuario/registro" class="boton boton-green">Agregar Usuarios</a>
             </li>
             <li>
-                <a href="ingresar_informes.php" class="boton boton-green">Agregar Informe</a>
+                <a href="<?=base_url?>cliente/gestionar" class="boton boton-green">Gestionar Clientes</a>
             </li>
             <li>
-                <a href="<?=base_url?>usuario/logout" class="boton boton-orange">Cerrar Sesión</a>
+                <a href="ingresar_informes.php" class="boton boton-orange">Agregar Informe</a>
+            </li>
+            <li>
+                <a href="<?=base_url?>usuario/logout" class="boton boton-red">Cerrar Sesión</a>
             </li>
         </ul>
     </div>
