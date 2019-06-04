@@ -69,6 +69,9 @@ CREATE TABLE equipos(
     CONSTRAINT  fk_equipo_proyecto FOREIGN KEY(proyecto_id) REFERENCES proyectos(id)
 )ENGINE=InnoDb;
 
+INSERT INTO equipos VALUES(NULL, 1, 'TRANSFORMADOR', 'GENERAL ELECTRIC', 'PEGASO', 'KGB-254012', 'GE-JAPON', 'El transformador de la nueva generación', CURDATE(), null);
+INSERT INTO equipos VALUES(NULL, 1, 'SELECCIONADORA', 'WESTINGHOUSE', 'ROCKETEER', 'CIA-841229', 'WH-USA', 'La seleccionadora más eficiente del mercado', CURDATE(), null);
+
 CREATE TABLE informes(
     id                  INT(255)        auto_increment not null,
     proyect_id          INT(255)        not null,

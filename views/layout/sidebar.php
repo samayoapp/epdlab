@@ -15,6 +15,9 @@
                 <a href="<?=base_url?>proyecto/gestionar" class="boton">Proyectos</a>
             </li>
             <li>
+                <a href="<?=base_url?>equipo/gestionar" class="boton boton-green">Gestionar Equipos</a>
+            </li>
+            <li>
                 <a href="<?=base_url?>usuario/registro" class="boton boton-green">Agregar Usuarios</a>
             </li>
             <li>
